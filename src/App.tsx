@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import ClickCounter from './components/ClickCounter'
+import GridSample from './components/GridSample'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,9 @@ function App() {
       <h1 className="text-4xl font-extrabold text-blue-700 mb-8 text-center">Gertracktitude</h1>
       <div className="w-full max-w-md">
         <ClickCounter clicks={count} clickHandler={handleClick}/>
+      </div>
+      <div>
+        <GridSample />
       </div>
     </div>
   )
